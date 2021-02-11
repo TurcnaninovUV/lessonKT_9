@@ -1,0 +1,22 @@
+fun main() {
+    val comment = Comment(1, ownerId = 4)
+    val comment2 = Comment(1, ownerId = 5)
+    val comment3 = Comment(1, ownerId = 6)
+    val comment4 = Comment(1, ownerId = 4, guid = 5)
+    val note = Note(1)
+    val note2 = Note(2)
+    val note3 = Note(3)
+
+    NoteService.addNote(note)
+    NoteService.addNote(note2)
+    NoteService.addNote(note3)
+    NoteService.deleteNote(note2)
+    NoteService.createComment(comment)
+    NoteService.createComment(comment3)
+    NoteService.createComment(comment2)
+    NoteService.deleteComment(comment2)
+    NoteService.getNotes()
+    NoteService.getComments(note)
+    NoteService.getById(3)
+    NoteService.editComment(comment4)
+}
