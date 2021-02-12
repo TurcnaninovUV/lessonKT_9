@@ -7,16 +7,4 @@ fun main() {
     val note2 = Note(2)
     val note3 = Note(3)
 
-    NoteService.addNote(note)
-    NoteService.addNote(note2)
-    NoteService.addNote(note3)
-    NoteService.deleteNote(note2)
-    NoteService.createComment(comment)
-    NoteService.createComment(comment3)
-    NoteService.createComment(comment2)
-    NoteService.deleteComment(comment2)
-    NoteService.getNotes()
-    NoteService.getComments(note)
-    NoteService.getById(3)
-    NoteService.editComment(comment4)
 }
